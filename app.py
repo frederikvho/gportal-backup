@@ -21,7 +21,7 @@ driver.get(os.environ["GPORTAL_BACKUP_URL"])
 # Navigate Authentication
 driver.find_element_by_id("username").send_keys(os.environ["GPORTAL_EMAIL"])
 driver.find_element_by_id("password").send_keys(os.environ["GPORTAL_PASSWORD"])
-driver.find_element_by_class_name("submit").click()
+driver.find_element_by_id("kc-login").click()
 
 # Deubgging: print the contents
 # print(driver.page_source)

@@ -19,7 +19,7 @@ driver.implicitly_wait(10)
 driver.get(os.environ["GPORTAL_BACKUP_URL"])
 
 # Navigate Authentication
-driver.find_element_by_id("login").send_keys(os.environ["GPORTAL_EMAIL"])
+driver.find_element_by_id("username").send_keys(os.environ["GPORTAL_EMAIL"])
 driver.find_element_by_id("password").send_keys(os.environ["GPORTAL_PASSWORD"])
 driver.find_element_by_class_name("submit").click()
 

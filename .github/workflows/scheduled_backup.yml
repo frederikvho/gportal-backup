@@ -1,7 +1,7 @@
 name: Scheduled Backup
 on:
   schedule:
-    - cron: "0 5 * * *"
+    - cron: "0 4,16 * * *"
 
 jobs:
   create_backup:

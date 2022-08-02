@@ -25,14 +25,14 @@ driver.get(os.environ["GPORTAL_BACKUP_URL"])
 #driver.find_element_by_id("kc-login").click()
 
 # Navigate Authentication
-driver.find_element("name", "username").send_keys(os.environ["GPORTAL_EMAIL"])
-driver.find_element("name", "password").send_keys(os.environ["GPORTAL_PASSWORD"])
-driver.find_element("name", "login").click()
+driver.find_element(By.NAME, "username").send_keys(os.environ["GPORTAL_EMAIL"])
+driver.find_element(By.NAME, "password").send_keys(os.environ["GPORTAL_PASSWORD"])
+driver.find_element(By.NAME, "login").click()
 
 
 # Deubgging: print the contents
 # print(driver.page_source)
 
 # Create Backup
-driver.find_element("id", "make_backup").click()
-driver.find_element(By.XPATH, "/html/body/div[8]/div/div/div/div/button[2]").click()
+driver.find_element(By.ID, "make_backup").click()
+driver.find_element(By.CSS_SELECTOR, "/html/body/div[8]/div/div/div/div/button[2]").click()

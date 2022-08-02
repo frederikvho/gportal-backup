@@ -6,6 +6,7 @@ https://selenium-python.readthedocs.io/waits.html
 import os
 
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 driver = webdriver.Remote(
@@ -34,4 +35,4 @@ driver.find_element("name", "login").click()
 
 # Create Backup
 driver.find_element("id", "make_backup").click()
-driver.find_element("xpath", "/html/body/div[8]/div/div/div/div/button[2]").click()
+driver.find_element(By.XPATH, "/html/body/div[8]/div/div/div/div/button[2]").click()

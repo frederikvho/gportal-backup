@@ -35,4 +35,4 @@ driver.find_element(By.NAME, "login").click()
 
 # Create Backup
 driver.find_element(By.ID, "make_backup").click()
-driver.find_element(By.CSS_SELECTOR, "/html/body/div[8]/div/div/div/div/button[2]").click()
+driver.find_element(By.CSS_SELECTOR, "body > div.dialog.dialog--size-default > div > div > div > div > button:nth-child(2)").click()

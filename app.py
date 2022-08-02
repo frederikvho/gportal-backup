@@ -34,6 +34,4 @@ driver.find_element("name", "login").click()
 
 # Create Backup
 driver.find_element("id", "make_backup").click()
-driver.find_element_by_css_selector(
-    "body > div.dialog.dialog--size-default > div > div > div > div > button:nth-child(2)"
-).click()
+driver.find_element("xpath", "/html/body/div[8]/div/div/div/div/button[2]").click()

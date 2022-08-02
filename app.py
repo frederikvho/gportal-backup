@@ -33,7 +33,7 @@ driver.find_element("name", "login").click()
 # print(driver.page_source)
 
 # Create Backup
-driver.find_element_by_id("make_backup").click()
+driver.find_element("id", "make_backup").click()
 driver.find_element_by_css_selector(
     "body > div.dialog.dialog--size-default > div > div > div > div > button:nth-child(2)"
 ).click()
